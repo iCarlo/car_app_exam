@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                {% for car in cars %}
+                <div id="cardcontainer">
+                    <div id="carditem">
+                        <div  class="col my-1">
+                            <div id="carcard" class="card">
+                                <img src="{{car.picture.url}}" class="card-img-top" alt="...">
+                                <div  class="card-body">
+                                     <h5 class="card-title">{{car.name}}</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="{% static 'javascript/card.js' %}"></script>
+                {% endfor %}
+            </div>
+        </div>
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% endblock content %}

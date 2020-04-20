@@ -1,0 +1,47 @@
+#carddiv {
+  position: absolute;
+  z-index: 9;
+}
+
+#carddivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+
+#carcard {
+    height: 200px;
+    width: 200px;
+    border-color: #000033;
+}
+
+.col {
+    padding-top: 100px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+
+.card-body, .card-title, .card-text {
+    border-color: #000033;
+}
+
+#createcard {
+    flex: auto;
+    height: 260px;
+    width: 250px;
+    background-color: #28b4c9;
+
+}
+
+#createrow {
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#createbody {
+    padding-bottom: 10px;
+}
